@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>PIPER</title>
+  <link rel="icon" href="test.png">
+</head>
+
+<body>
+
+<div class="content">
+  <img src="piperbanner.png" id="testpic">
+
+  <!-- <div id="banner">
+    <div id="banner-content">
+      Welcome to the website! Don't worry, Clay is a harly riding faggot.
+    </div>
+  </div> -->
+
+
+<!-- <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    <button class="tablinks" onclick="openTab(event, 'Pictures')">Pictures</button>
+    <button class="tablinks" onclick="openTab(event, 'Lorem')">Lorem</button>
+  </div>
+
+  <div class="tabcontent" id="About">
+    <span
+    onclick="this.parentElement.style.display='none'" class="topright">X</span>
+    <h3>About Piper</h3>
+    <p>Piper is the best kitty in the world.</p>
+  </div>
+
+  <div class="tabcontent" id="Pictures">
+   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+   <h3>Pictures of Piper</h3>
+   <p>Here are some cute pictures of piper:</p>
+  </div>
+
+  <div class="tabcontent" id="Lorem">
+   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+   <h3>Lorem</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ipsum, tempora ipsam, est sunt provident, quae vero asperiores molestiae aliquam nam. Commodi consequuntur, inventore facere quidem voluptatibus, aut distinctio praesentium reiciendis, dolores fuga magnam a, ducimus quod cumque. At a laudantium voluptas, necessitatibus praesentium! Ipsa quis dolores sunt, voluptates iure iste sapiente ratione at, dignissimos sed repellendus, magnam ipsam id. Excepturi ad eius qui accusamus repellendus veniam vero explicabo assumenda, quibusdam repellat impedit magnam possimus ducimus aperiam. Facilis, unde voluptas rem vel debitis fugit! Dolore quod quidem necessitatibus pariatur ipsum veritatis, odio temporibus sit mollitia tempore soluta eos ab tempora nihil non asperiores fuga et nisi molestiae voluptatem alias facere facilis dolorum. Maiores est iste quidem impedit unde minima, tempore ipsum voluptatem, ratione pariatur incidunt! Ex, maiores. Porro rem, qui recusandae quae illo. Vero velit ipsum cupiditate fugiat, minima totam similique ad officiis amet dignissimos veniam officia quod saepe delectus laboriosam deserunt, hic corporis possimus nam sed provident, incidunt. Ipsam saepe quasi beatae, sunt voluptas, distinctio temporibus ex optio aperiam rem, veritatis provident rerum facere esse est vero laboriosam ad blanditiis commodi asperiores mollitia accusantium! Reprehenderit ut dolorem natus tempora, saepe error molestiae quisquam commodi dicta quos temporibus, aspernatur ea!</p>
+  </div>
+
+    <script>
+    function openTab(evt, tabName){
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i< tabcontent.length; i++){
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i< tablinks.length; i++){
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+<testing boostrap -->
+
+<button class="accordion">About</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores, mollitia vitae quis tenetur error sunt cumque nisi voluptates voluptatum illo molestias expedita dolores velit quo non similique pariatur, fugiat eos ratione laudantium voluptas in. Hic harum consequatur neque pariatur possimus tenetur similique molestiae, ratione mollitia sit cupiditate tempore autem totam eligendi labore culpa dolorem minus alias. Repellat sed fugiat molestias ea magni modi sint, ipsam vero explicabo quod, iure doloribus in maxime repellendus perferendis unde, architecto labore totam harum earum, facere provident recusandae ipsa. Accusantium molestiae quasi totam a illo. Natus quod aliquid doloremque, magnam, iusto officiis qui reprehenderit?</p>
+</div>
+
+<button class="accordion">Lorem</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores, mollitia vitae quis tenetur error sunt cumque nisi voluptates voluptatum illo molestias expedita dolores velit quo non similique pariatur, fugiat eos ratione laudantium voluptas in. Hic harum consequatur neque pariatur possimus tenetur similique molestiae, ratione mollitia sit cupiditate tempore autem totam eligendi labore culpa dolorem minus alias. Repellat sed fugiat molestias ea magni modi sint, ipsam vero explicabo quod, iure doloribus in maxime repellendus perferendis unde, architecto labore totam harum earum, facere provident recusandae ipsa. Accusantium molestiae quasi totam a illo. Natus quod aliquid doloremque, magnam, iusto officiis qui reprehenderit?</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</div>
+</body>
+</html>

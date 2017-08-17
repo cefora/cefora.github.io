@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+   body{
+     margin-top: 70px;
+     background:#333;
+     color: #fff;
+   }
+
+  </style>
+  <title>Converter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="diaplay-4 text-center mb-3">Dank Converter</h1>
+        <form>
+          <div class="form-group">
+            <input
+            id="gInput"
+            type="number"
+            class="form-control form-control-lg"
+            placeholder="Enter Grams... Of Dank">
+          </div>
+        </form>
+        <div id="output">
+          <div class="card card-primary mb-2">
+            <div class="cardblock">
+              <h4>Eighths:</h4>
+              <div id="eOutput">
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-success mb-2">
+            <div class="cardblock">
+              <h4>Quarters:</h4>
+              <div id="qOutput">
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-warning mb-2">
+            <div class="cardblock">
+              <h4>Half Ounces:</h4>
+              <div id="hoOutput">
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-danger mb-2">
+            <div class="cardblock">
+              <h4>Ounces:</h4>
+              <div id="oOutput">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center" id="danktext">
+    <h4>That's a lot of bud, bub</h4>
+  </div>
+
+<center>
+<img src="potanim.gif" id="potpic"  width="256px" height="256px" >
+</center>
+  <script>
+    document.getElementById('output').style.visibility = 'hidden';
+    document.getElementById('danktext').style.visibility = 'hidden';
+    document.getElementById('gInput').addEventListener('input', function(e){
+      let element1 = document.getElementById('oOutput')
+      document.getElementById('danktext').style.visibility = 'hidden';
+      document.getElementById('output').style.visibility = 'visible';
+      let gram = e.target.value;
+      document.getElementById('eOutput').innerHTML = gram/3.5;
+      document.getElementById('qOutput').innerHTML = gram/7;
+      document.getElementById('hoOutput').innerHTML = gram/14;
+      document.getElementById('oOutput').innerHTML = gram/28;
+
+      if (element1.innerHTML >= 1){
+        document.getElementById('danktext').style.visibility = 'visible';
+      }
+    })
+  </script>
+</body>
+</html>

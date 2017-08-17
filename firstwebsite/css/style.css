@@ -1,0 +1,112 @@
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#testpic{
+  max-width: 100%;
+  height: auto;
+}
+div.content{
+  padding-top: 25px;
+  max-width: 960px ;
+  margin: auto;
+}
+
+/* style the tab */
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+}
+
+/* style the buttons inside of the tab */
+div.tab button {
+  background-colro: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  transition: .3s;
+  font-size: 25px;
+}
+
+/* change bg color of button on hover*/
+div.tab button:hover {
+  background-color: #aaa;
+}
+
+/* create an active/current tablink class */
+div.tab button.active {
+  background-color: #aac;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.topright:hover {
+  color: red;
+}
+
+/* style the tab content */
+.tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*accordion CSS*/
+/*style buttons that are used to open and close tabs*/
+button.accordion{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: middle;
+  border: none;
+  outline:none;
+  transition: 0.4s;
+}
+/*add bg color to button when clicked*/
+div.button.accordion.active, button.accordion:hover{
+  background-color: #ddd;
+}
+/*style the accordion panel*/
+div.panel{
+  padding:0 18px;
+  background-color: white;
+  display:none;
+}
+
+/*div#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  width: 100%;
+}
+div#banner-content {
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #000;
+}*/
